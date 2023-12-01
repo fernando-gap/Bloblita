@@ -1,4 +1,7 @@
+build/
 node_modules
 config.json
 .env.local
 .env.production
+TODO.md
+database.js

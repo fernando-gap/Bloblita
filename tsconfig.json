@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "outDir": "./build",
+        "rootDir": "./src",
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "target": "ESNext",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}

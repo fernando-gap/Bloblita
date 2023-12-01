@@ -2,9 +2,11 @@
   "name": "bloblita",
   "version": "1.0.0",
   "description": "A discord bot for the bloblish language.",
-  "main": "index.js",
+  "main": "build/src/client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "npx tsc -w > /dev/null & NODE_ENV=development node --watch ./build/client.js",
+    "commands:deploy": "node ./util/deploy-commands.js",
+    "commands:delete": "node ./util/delete-commands.js"
   },
   "author": "",
   "license": "MIT",
@@ -14,6 +16,12 @@
     "typescript": "^5.3.2"
   },
   "dependencies": {
-    "discord.js": "^14.14.1"
+    "@types/node": "^20.10.1",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "mysql2": "^3.6.5",
+    "sequelize": "^6.35.1",
+    "sequelize-cli": "^6.6.2",
+    "sequelize-typescript": "^2.1.6"
   }
 }
